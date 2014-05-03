@@ -32,7 +32,8 @@ if 'development' == env
 
 
 # Routes Setup
-app.get '/', routes.index
+app.route '/'
+  .get routes.index
 
 
 # Middleware Setup
