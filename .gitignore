@@ -1,3 +1,5 @@
+*.swp
+.sw*
 node_modules/
 app/
 
