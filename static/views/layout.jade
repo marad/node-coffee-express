@@ -1,0 +1,34 @@
+doctype html
+html(ng-app="module")
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/bootstrap.css')
+    link(rel='stylesheet', href='/stylesheets/bootstrap-theme.css')
+    link(rel='stylesheet', href='/stylesheets/spacelab.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    block styles
+
+    script(src="//code.jquery.com/jquery-1.11.0.js")
+    script(src="//code.jquery.com/ui/1.10.4/jquery-ui.js")
+    script(src="/javascripts/bootstrap.js")
+    script(src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular.js")
+    script(src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular-route.js")
+    script(src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular-resource.js")
+    script(src="/javascripts/application.js")
+    script(src="/javascripts/ui-bootstrap-tpls-0.10.0.js")
+    block scripts
+  body(ng-controller="MainCtl")
+    header
+      nav.navbar.navbar-default
+        div.container
+          div.navbar-header
+            a.navbar-brand(href="/") Rejestr Realizacji
+
+          ul.nav.navbar-nav.navbar-right
+            li: a(href="#users") Users
+
+    div.main
+      block content
+
+    footer.text-center
+      div 
